@@ -2,13 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>E_CommerceApi.Domain</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\Shared\E_CommerceApi.Shared\E_CommerceApi.Shared.csproj" />
-  </ItemGroup>
 
 </Project>
