@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using E_CommerceApi.Domain.Entities;
 
-namespace E_CommerceApi.Application.Repositories.Customer
+namespace E_CommerceApi.Application.Repositories.Customers
 {
-    public interface ICustomerReadRepository
+    public interface ICustomerReadRepository : IReadRepository<Customer>
     {
     }
 }
