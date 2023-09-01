@@ -48,3 +48,6 @@ namespace E_CommerceApi.Persistence.Repositories
         }
     }
 }
+//"Parse" terimi, bir veri türünün bir başka veri türüne dönüştürülmesi işlemini ifade eder.
+//AsQueryable:IQueryable türü veritabanı sorgularını oluşturmana ve optimize etmemize  olanak tanır. "AsQueryable" bu dönüşüm işlemine yardımcı olur.
+//AsNoTracking:veri sorgulama işlemleri sırasında izleme (tracking) işleminin devre dışı bırakılmasını sağlar.

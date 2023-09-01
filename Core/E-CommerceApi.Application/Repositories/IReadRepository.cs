@@ -11,4 +11,7 @@ namespace E_CommerceApi.Application.Repositories
         Task<T> GetByIdAsync(string id, bool tracking = true);
     }
 }
-//IQueryable
+//IQueryable : veritabanı sorguları daha verimli ve dinamik bir şekilde oluşturulabilir.
+//ve verileri çekme, filtreleme, sıralama ve gruplama gibi işlemleri  optimize edilebilir.
+
+//tracking :veritabanı işlemleri sırasında ilişkili  nesnelerin değişikliklerini takip etmek için kullanılır.
