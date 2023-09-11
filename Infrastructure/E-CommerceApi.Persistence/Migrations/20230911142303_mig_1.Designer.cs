@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace E_CommerceApi.Persistence.Migrations
 {
     [DbContext(typeof(EfContext))]
-    [Migration("20230831124407_mig_1")]
+    [Migration("20230911142303_mig_1")]
     partial class mig_1
     {
         /// <inheritdoc />
@@ -37,6 +37,9 @@ namespace E_CommerceApi.Persistence.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
 
@@ -63,6 +66,9 @@ namespace E_CommerceApi.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("timestamp with time zone");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
@@ -88,6 +94,9 @@ namespace E_CommerceApi.Persistence.Migrations
 
                     b.Property<int>("Stock")
                         .HasColumnType("integer");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
 

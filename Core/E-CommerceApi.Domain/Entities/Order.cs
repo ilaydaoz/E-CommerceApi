@@ -9,6 +9,7 @@ namespace E_CommerceApi.Domain.Entities
         //çokoçok ilişki
         public ICollection <Product> Products { get; set; }
         //bire çok ilişki koruldu
+        public Guid CustomerId { get; set; }
         public Customer Customer { get; set; }
     }
 }
