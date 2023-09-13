@@ -9,6 +9,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddPersistenceServices(builder.Configuration);
+builder.Services.AddCors(opt => opt.AddDefaultPolicy(policy =>
+policy.WithOrigins("https://localhost:7169", "https://localhost:7169").AllowAnyHeader().AllowAnyMethod())
+);
 
 var app = builder.Build();
 
