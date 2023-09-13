@@ -5,7 +5,7 @@ namespace E_CommerceApi.Shared.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BaseController
+    public class BaseController: ControllerBase
     {
     }
 }
