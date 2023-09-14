@@ -9,8 +9,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddPersistenceServices(builder.Configuration);
+
 builder.Services.AddCors(opt => opt.AddDefaultPolicy(policy =>
-policy.WithOrigins("https://localhost:7169", "https://localhost:7169").AllowAnyHeader().AllowAnyMethod())
+policy.WithOrigins("http://localhost:4200", "http://localhost:4200").AllowAnyHeader().AllowAnyMethod())
 );
 
 var app = builder.Build();
@@ -21,6 +22,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors();
 
 app.UseHttpsRedirection();
 
